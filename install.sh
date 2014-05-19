@@ -1,5 +1,7 @@
 #! /bin/bash
 
+#auther:bincker
+#site:http://t.qq.com/bincker/
 echo "Install enviroment Tools and modules"
 echo "================================================="
 echo "================================================="
