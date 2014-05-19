@@ -30,4 +30,14 @@ sudo unzip  "$dl"
 sudo rm "$dl"
 cd ../
 echo "downloaded the tools.zip"
+echo "profile prepareing............"
+export JAVA_HOME=/home/kotz/java/jdk1.7.0
+export JRE_HOME=/home/kotz/java/jdk1.7.0/jre
+export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH:$HOME/bin
+export PATH=$PATH:/home/kotz/java/android/sdk/tools/
+export PATH=$PATH:/home/kotz/java/android/sdk/platform-tools/
+export ANDROID_SDK_Home=/home/kotz/java/android/sdk/
+export sqlmap=/home/kotz/sqlmap/sqlmap
+
 echo $(pwd)
